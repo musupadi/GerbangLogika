@@ -17,6 +17,16 @@ import com.destiny.gamegerbanglogika.Model.Dificulty.Easy.EasyModel2;
 import com.destiny.gamegerbanglogika.Model.Dificulty.Easy.EasyModel3;
 import com.destiny.gamegerbanglogika.Model.Dificulty.Easy.EasyModel4;
 import com.destiny.gamegerbanglogika.Model.Dificulty.Easy.EasyModel5;
+import com.destiny.gamegerbanglogika.Model.Dificulty.Hard.HardModel1;
+import com.destiny.gamegerbanglogika.Model.Dificulty.Hard.HardModel2;
+import com.destiny.gamegerbanglogika.Model.Dificulty.Hard.HardModel3;
+import com.destiny.gamegerbanglogika.Model.Dificulty.Hard.HardModel4;
+import com.destiny.gamegerbanglogika.Model.Dificulty.Hard.HardModel5;
+import com.destiny.gamegerbanglogika.Model.Dificulty.Medium.NormalModel1;
+import com.destiny.gamegerbanglogika.Model.Dificulty.Medium.NormalModel2;
+import com.destiny.gamegerbanglogika.Model.Dificulty.Medium.NormalModel3;
+import com.destiny.gamegerbanglogika.Model.Dificulty.Medium.NormalModel4;
+import com.destiny.gamegerbanglogika.Model.Dificulty.Medium.NormalModel5;
 import com.destiny.gamegerbanglogika.R;
 
 import java.util.ArrayList;
@@ -54,6 +64,32 @@ public class SoalActivity extends AppCompatActivity {
             }else{
                 pList.addAll(EasyModel5.getListData());
             }
+        }else if (Kategori.equals("Normal")){
+            if (Random.equals("1")){
+                pList.addAll(NormalModel1.getListData());
+            }else if (Random.equals("2")){
+                pList.addAll(NormalModel2.getListData());
+            }else if (Random.equals("3")){
+                pList.addAll(NormalModel3.getListData());
+            }else if (Random.equals("4")){
+                pList.addAll(NormalModel4.getListData());
+            }else{
+                pList.addAll(NormalModel5.getListData());
+            }
+        }else if (Kategori.equals("Hard")){
+            if (Random.equals("1")){
+                pList.addAll(HardModel1.getListData());
+            }else if (Random.equals("2")){
+                pList.addAll(HardModel2.getListData());
+            }else if (Random.equals("3")){
+                pList.addAll(HardModel3.getListData());
+            }else if (Random.equals("4")){
+                pList.addAll(HardModel4.getListData());
+            }else{
+                pList.addAll(HardModel5.getListData());
+            }
+        }else if (Kategori.equals("OR")){
+
         }
         getSupportActionBar().setTitle("No : "+pList.get(no).getNo());
         Jawaban1.setText(pList.get(no).getJawaban1());
