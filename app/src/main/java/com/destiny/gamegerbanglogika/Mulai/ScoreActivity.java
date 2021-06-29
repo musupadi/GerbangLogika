@@ -28,6 +28,22 @@ public class ScoreActivity extends AppCompatActivity {
         final String Kategori = data.getStringExtra("KATEGORI");
         if (Kategori.equals("Easy")){
             Dificulty.setText("Kesulitan : "+Kategori);
+        }else if (Kategori.equals("Normal")){
+            Dificulty.setText("Kesulitan : "+Kategori);
+        }else if (Kategori.equals("Hard")){
+            Dificulty.setText("Kesulitan : "+Kategori);
+        }else if (Kategori.equals("AND")){
+            Dificulty.setText("Kategorikal : "+Kategori);
+        }else if (Kategori.equals("NAND")){
+            Dificulty.setText("Kategorikal : "+Kategori);
+        }else if (Kategori.equals("NOR")){
+            Dificulty.setText("Kategorikal : "+Kategori);
+        }else if (Kategori.equals("OR")){
+            Dificulty.setText("Kategorikal : "+Kategori);
+        }else if (Kategori.equals("XNOR")){
+            Dificulty.setText("Kategorikal : "+Kategori);
+        }else if (Kategori.equals("XOR")){
+            Dificulty.setText("Kategorikal : "+Kategori);
         }
         Score.setText(score);
 
@@ -45,5 +61,10 @@ public class ScoreActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+
     }
 }

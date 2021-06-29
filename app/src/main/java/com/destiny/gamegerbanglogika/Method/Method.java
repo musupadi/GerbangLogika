@@ -184,16 +184,6 @@ public class Method {
         String MAGIC2 = MAGIC1.replace(",","");
         return MAGIC2.replace(".","");
     }
-    public String AUTH(){
-        String username = "faba_admin_db";
-        String password = "WhiteList_admin_FABA2019";
-
-        String base = username+":"+password;
-
-        String authHeader = "Basic "+ Base64.encodeToString(base.getBytes(),Base64.NO_WRAP);
-        return authHeader;
-    }
-
 
     private void copyFile(InputStream in, OutputStream out) throws IOException {
         byte[] buffer = new byte[1024];

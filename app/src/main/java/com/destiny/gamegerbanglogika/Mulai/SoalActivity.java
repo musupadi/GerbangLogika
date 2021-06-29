@@ -2,6 +2,8 @@ package com.destiny.gamegerbanglogika.Mulai;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -27,6 +29,36 @@ import com.destiny.gamegerbanglogika.Model.Dificulty.Medium.NormalModel2;
 import com.destiny.gamegerbanglogika.Model.Dificulty.Medium.NormalModel3;
 import com.destiny.gamegerbanglogika.Model.Dificulty.Medium.NormalModel4;
 import com.destiny.gamegerbanglogika.Model.Dificulty.Medium.NormalModel5;
+import com.destiny.gamegerbanglogika.Model.Kategorikal.AND.AndModel1;
+import com.destiny.gamegerbanglogika.Model.Kategorikal.AND.AndModel2;
+import com.destiny.gamegerbanglogika.Model.Kategorikal.AND.AndModel3;
+import com.destiny.gamegerbanglogika.Model.Kategorikal.AND.AndModel4;
+import com.destiny.gamegerbanglogika.Model.Kategorikal.AND.AndModel5;
+import com.destiny.gamegerbanglogika.Model.Kategorikal.NAND.NandModel1;
+import com.destiny.gamegerbanglogika.Model.Kategorikal.NAND.NandModel2;
+import com.destiny.gamegerbanglogika.Model.Kategorikal.NAND.NandModel3;
+import com.destiny.gamegerbanglogika.Model.Kategorikal.NAND.NandModel4;
+import com.destiny.gamegerbanglogika.Model.Kategorikal.NAND.NandModel5;
+import com.destiny.gamegerbanglogika.Model.Kategorikal.NOR.NorModel1;
+import com.destiny.gamegerbanglogika.Model.Kategorikal.NOR.NorModel2;
+import com.destiny.gamegerbanglogika.Model.Kategorikal.NOR.NorModel3;
+import com.destiny.gamegerbanglogika.Model.Kategorikal.NOR.NorModel4;
+import com.destiny.gamegerbanglogika.Model.Kategorikal.NOR.NorModel5;
+import com.destiny.gamegerbanglogika.Model.Kategorikal.OR.OrModel1;
+import com.destiny.gamegerbanglogika.Model.Kategorikal.OR.OrModel2;
+import com.destiny.gamegerbanglogika.Model.Kategorikal.OR.OrModel3;
+import com.destiny.gamegerbanglogika.Model.Kategorikal.OR.OrModel4;
+import com.destiny.gamegerbanglogika.Model.Kategorikal.OR.OrModel5;
+import com.destiny.gamegerbanglogika.Model.Kategorikal.XNOR.XnorModel1;
+import com.destiny.gamegerbanglogika.Model.Kategorikal.XNOR.XnorModel2;
+import com.destiny.gamegerbanglogika.Model.Kategorikal.XNOR.XnorModel3;
+import com.destiny.gamegerbanglogika.Model.Kategorikal.XNOR.XnorModel4;
+import com.destiny.gamegerbanglogika.Model.Kategorikal.XNOR.XnorModel5;
+import com.destiny.gamegerbanglogika.Model.Kategorikal.XOR.XorModel1;
+import com.destiny.gamegerbanglogika.Model.Kategorikal.XOR.XorModel2;
+import com.destiny.gamegerbanglogika.Model.Kategorikal.XOR.XorModel3;
+import com.destiny.gamegerbanglogika.Model.Kategorikal.XOR.XorModel4;
+import com.destiny.gamegerbanglogika.Model.Kategorikal.XOR.XorModel5;
 import com.destiny.gamegerbanglogika.R;
 
 import java.util.ArrayList;
@@ -88,8 +120,78 @@ public class SoalActivity extends AppCompatActivity {
             }else{
                 pList.addAll(HardModel5.getListData());
             }
+        }else if (Kategori.equals("AND")){
+            if (Random.equals("1")){
+                pList.addAll(AndModel1.getListData());
+            }else if (Random.equals("2")){
+                pList.addAll(AndModel2.getListData());
+            }else if (Random.equals("3")){
+                pList.addAll(AndModel3.getListData());
+            }else if (Random.equals("4")){
+                pList.addAll(AndModel4.getListData());
+            }else{
+                pList.addAll(AndModel5.getListData());
+            }
+        }else if (Kategori.equals("NAND")){
+            if (Random.equals("1")){
+                pList.addAll(NandModel1.getListData());
+            }else if (Random.equals("2")){
+                pList.addAll(NandModel2.getListData());
+            }else if (Random.equals("3")){
+                pList.addAll(NandModel3.getListData());
+            }else if (Random.equals("4")){
+                pList.addAll(NandModel4.getListData());
+            }else{
+                pList.addAll(NandModel5.getListData());
+            }
+        }else if (Kategori.equals("NOR")){
+            if (Random.equals("1")){
+                pList.addAll(NorModel1.getListData());
+            }else if (Random.equals("2")){
+                pList.addAll(NorModel2.getListData());
+            }else if (Random.equals("3")){
+                pList.addAll(NorModel3.getListData());
+            }else if (Random.equals("4")){
+                pList.addAll(NorModel4.getListData());
+            }else{
+                pList.addAll(NorModel5.getListData());
+            }
         }else if (Kategori.equals("OR")){
-
+            if (Random.equals("1")){
+                pList.addAll(OrModel1.getListData());
+            }else if (Random.equals("2")){
+                pList.addAll(OrModel2.getListData());
+            }else if (Random.equals("3")){
+                pList.addAll(OrModel3.getListData());
+            }else if (Random.equals("4")){
+                pList.addAll(OrModel4.getListData());
+            }else{
+                pList.addAll(OrModel5.getListData());
+            }
+        }else if (Kategori.equals("XNOR")){
+            if (Random.equals("1")){
+                pList.addAll(XnorModel1.getListData());
+            }else if (Random.equals("2")){
+                pList.addAll(XnorModel2.getListData());
+            }else if (Random.equals("3")){
+                pList.addAll(XnorModel3.getListData());
+            }else if (Random.equals("4")){
+                pList.addAll(XnorModel4.getListData());
+            }else{
+                pList.addAll(XnorModel5.getListData());
+            }
+        }else if (Kategori.equals("XOR")){
+            if (Random.equals("1")){
+                pList.addAll(XorModel1.getListData());
+            }else if (Random.equals("2")){
+                pList.addAll(XorModel2.getListData());
+            }else if (Random.equals("3")){
+                pList.addAll(XorModel3.getListData());
+            }else if (Random.equals("4")){
+                pList.addAll(XorModel4.getListData());
+            }else{
+                pList.addAll(XorModel5.getListData());
+            }
         }
         getSupportActionBar().setTitle("No : "+pList.get(no).getNo());
         Jawaban1.setText(pList.get(no).getJawaban1());
@@ -183,5 +285,39 @@ public class SoalActivity extends AppCompatActivity {
         Default();
         Jawaban3.setBackgroundResource(R.drawable.button_red_rounded);
         Jawaban = Jaw;
+    }
+
+    @Override
+    public void onBackPressed() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(SoalActivity.this);
+
+        // Set a title for alert dialog
+        builder.setTitle("Pemberitahuan");
+
+        // Ask the final question
+        builder.setMessage("Jika Kembali Sekarang Jawaban anda akan Ter-Reset");
+
+        // Set the alert dialog yes button click listener
+        builder.setPositiveButton("Iya", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                // Do something when user clicked the Yes button
+                Intent intent = new Intent(SoalActivity.this,StartActivity.class);
+                startActivity(intent);
+                finishAffinity();
+            }
+        });
+
+        // Set the alert dialog no button click listener
+        builder.setNegativeButton("Tidak", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                // Do something when No button clicked
+            }
+        });
+
+        AlertDialog dialog = builder.create();
+        // Display the alert dialog on interface
+        dialog.show();
     }
 }
