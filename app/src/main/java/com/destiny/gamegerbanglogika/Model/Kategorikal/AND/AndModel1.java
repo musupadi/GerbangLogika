@@ -8,7 +8,6 @@ import java.util.ArrayList;
 public class AndModel1 {
     public static String[][] data = new String[][]{
             //Easy
-
             {"1",
                     String.valueOf(R.drawable.normal_5_and_mati),
                     String.valueOf(R.drawable.normal_5_and_nyala),

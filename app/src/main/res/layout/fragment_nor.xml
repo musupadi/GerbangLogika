@@ -22,10 +22,11 @@
                 android:gravity="top"
                 android:textColor="@color/colorPrimary"
                 android:fontFamily="@font/gotham" />
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
-                android:src="@drawable/nor"/>
+                android:src="@drawable/nor" />
         </LinearLayout>
     </ScrollView>
 
